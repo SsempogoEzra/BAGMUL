@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bagmul International - Your Partner in Business Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="description" content="Bagmul International: Your trusted partner in Uganda for seamless company registration, reliable compliance, and strategic business development. Empowering your growth.">
+    <meta name="keywords" content="company registration Uganda, business registration Uganda, NGO registration Uganda, document filing services Uganda, URSB annual returns Uganda, TIN registration Uganda, tax identification number Uganda, box number acquisition Uganda, business proposals Uganda, website development Uganda, NSSF number acquisition Uganda, Form 18 filing Uganda, business solutions Uganda, business development Uganda, company formation Uganda, compliance services Uganda, best company registration Uganda, best business registration Uganda, best NGO registration Uganda, company registration, business registration, NGO registration, document filing services, URSB annual returns, TIN registration, tax identification number, box number acquisition, business proposals, website development, NSSF number acquisition, Form 18 filing, business solutions, business development, company formation, compliance services, business support services Uganda, company incorporation Uganda, regulatory compliance Uganda, online presence development Uganda">
+    <meta name="author" content="Bagmul International/Mulungi Paul"> 
+
+    <meta property="og:title" content="Bagmul International - Your Partner in Business Solutions">
+    <meta property="og:description" content="Need company registration, compliance, or business growth support in Uganda? Bagmul International is your reliable partner.">
+    <meta property="og:image" content="URL of a compelling image to display on social shares">
+    <meta property="og:url" content="URL of your webpage">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image"> <meta name="twitter:title" content="Your Engaging Title for Twitter">
+    <meta name="twitter:description" content="A concise description for Twitter.">
+    <meta name="twitter:image" content="URL of your image for Twitter">
+    <meta name="twitter:url" content="URL of your webpage">
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2a5f8a;
+            --secondary: #f8f9fa;
+            --accent: #ff7e33;
+            --dark: #1a3a5a;
+            --light: #ffffff;
+            --text: #333333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter','Poppins', sans-serif;
+        }
+
+        body {
+            color: var(--text);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* Modern Header */
+        header {
+            background-color: var(--light);
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo-icon {
+            color: var(--accent);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav ul li a {
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary);
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--primary);
+            transition: width 0.3s ease;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        .demo-btn {
+            display: inline-block;
+            background: var(--primary);
+            color: var(--light);
+            padding: 0.7rem 1.5rem;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-left: 1rem;
+            border: none;
+            cursor: pointer;
+        }
+
+        .demo-btn:hover {
+            background: var(--accent);
+            color: var(--light);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('business-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--light);
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 0 2rem;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--light);
+            padding: 0.9rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            margin: 0 0.5rem;
+        }
+
+        .cta-btn.secondary {
+            background: transparent;
+            border: 2px solid var(--light);
+        }
+
+        .cta-btn:hover {
+            background: var(--light);
+            color: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 6rem 5%;
+            background: var(--secondary);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            background: var(--accent);
+            bottom: -10px;
+            left: 25%;
+        }
+
+        .section-title p {
+            max-width: 700px;
+            margin: 0 auto;
+            color: var(--text);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: var(--light);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        /* Services Preview (Replacing Dashboard Preview) */
+        .services-preview {
+            padding: 6rem 5%;
+            background: var(--light);
+        }
+
+        .services-preview-content {
+            margin-top: 3rem;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            border: 1px solid #eee;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .services-preview-content p {
+            font-size: 1.1rem;
+            color: var(--text);
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 6rem 5%;
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('business-team.jpg');
+            background-size: cover;
+            background-position: center;
+            color: var(--light);
+            text-align: center;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        .testimonial-card .quote {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .testimonial-card .quote::before {
+            content: '"';
+            font-size: 3rem;
+            color: var(--accent);
+            position: absolute;
+            left: -15px;
+            top: -15px;
+            opacity: 0.3;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .testimonial-author img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .author-info h4 {
+            margin-bottom: 0.2rem;
+        }
+
+        .author-info p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Pricing */
+        .pricing {
+            padding: 6rem 5%;
+            background: var(--secondary);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .pricing-card {
+            background: var(--light);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card.popular {
+            border: 2px solid var(--accent);
+            position: relative;
+            transform: scale(1.05);
+        }
+
+        .popular-tag {
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            background: var(--accent);
+            color: var(--light);
+            padding: 0.3rem 1rem;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .pricing-card h3 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .price span {
+            font-size: 1rem;
+            font-weight: normal;
+            opacity: 0.7;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .pricing-features li {
+            padding: 0.7rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        /* CTA Section */
+        .cta {
+            padding: 6rem 5%;
+            background: var(--primary);
+            color: var(--light);
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta p {
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            font-size: 1.1rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: var(--light);
+            padding: 4rem 5% 2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-col h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 2px;
+            background: var(--accent);
+            bottom: 0;
+            left: 0;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-col ul li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--accent);
+            padding-left: 5px;
+        }
+
+        .contact-info li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.7rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info i {
+            color: var(--accent);
+            margin-top: 0.2rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            color: var(--light);
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: var(--accent);
+            color: var(--dark);
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero-content h1 {
+                font-size: 2.8rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 1rem;
+            }
+
+            nav {
+                margin-top: 1rem;
+                width: 100%;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+            }
+
+            .demo-btn {
+                margin: 1rem 0 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            .hero {
+                height: 80vh;
+            }
+
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+
+            .cta-btn {
+                display: block;
+                margin: 0.5rem auto;
+                max-width: 250px;
+            }
+        }
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--light);
+            padding: 0.9rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(42, 95, 138, 0.15);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-briefcase logo-icon"></i>
+            <span>Bagmul International</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#TOP" class="active">Home</a></li>
+                <li><a href="./Services.html">Our Services</a></li>
+                <li><a href="./about.html">Why Choose Us</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+                <li><a href="#contact" class="demo-btn">GET A QUOTE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Your Trusted Partner for Business Growth</h1>
+            <p>Expert solutions for company registration, compliance, and business development.</p>
+            <div>
+                <a href="#services" class="cta-btn">OUR SERVICES</a>
+                <a href="#contact" class="cta-btn secondary">CONTACT US</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="features">
+        <div class="section-title">
+            <h2>Our Comprehensive Services</h2>
+            <p>Empowering your business with essential registration, compliance, and development support.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-building"></i>
+                </div>
+                <h3>Company Registration</h3>
+                <p>Seamless processing for new company registration and NGO registration.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+                <h3>Document Filing</h3>
+                <p>Efficient filing of company documents and change of particulars.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-sync-alt"></i>
+                </div>
+                <h3>URSB Annual Returns</h3>
+                <p>Timely and accurate filing of Uganda Registration Services Bureau (URSB) annual returns.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-inbox"></i>
+                </div>
+                <h3>Box Number Acquisition</h3>
+                <p>Hassle-free acquisition of your business postal box number.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-id-card"></i>
+                </div>
+                <h3>TIN Registration</h3>
+                <p>Assistance with Tax Identification Number (TIN) registration.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-passport"></i>
+                </div>
+                <h3>Driving Permit & Passport</h3>
+                <p>Support with driving permit and passport application processes.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3>Business Proposals</h3>
+                <p>Professional development of compelling business proposals.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>NSSF Number Acquisition</h3>
+                <p>Facilitating the acquisition of your National Social Security Fund (NSSF) number.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="far fa-file"></i>
+                </div>
+                <h3>Form 18 Filing</h3>
+                <p>Expert assistance with filing Form 18 and other statutory documents.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Website Development</h3>
+                <p>Professional website development services to establish your online presence.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-us" class="services-preview">
+        <div class="section-title">
+            <h2>Why Choose Bagmul International?</h2>
+            <p>Your success is our priority. We offer reliable and efficient business support.</p>
+        </div>
+        <div class="services-preview-content">
+            <p>At Bagmul International, we understand the challenges businesses face in navigating registration and compliance processes. Our experienced team is dedicated to providing you with efficient, reliable, and professional support, allowing you to focus on your core business activities. We pride ourselves on our attention to detail, commitment to client satisfaction, and deep understanding of local regulations.</p>
+            <ul style="list-style: disc; text-align: left; margin-top: 1rem; padding-left: 20px;">
+                <li>Expert guidance and support</li>
+                <li>Streamlined and efficient processes</li>
+                <li>Competitive pricing</li>
+                <li>Dedicated customer service</li>
+                <li>Focus on accuracy and compliance</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="section-title" style="color: white;">
+            <h2>What Our Clients Say</h2>
+            <p>Hear from businesses that have benefited from our expertise and support.</p>
+        </div>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <div class="quote">
+                    Bagmul International made the company registration process incredibly smooth and fast. Their team was professional and very helpful.
+                </div>
+                <div class="testimonial-author">
+                    <img src="client1.jpg" alt="Business Owner 1">
+                    <div class="author-info">
+                        <h4>Alex M.</h4>
+                        <p>CEO, Tech Solutions Ltd.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="quote">
+                    We were struggling with filing our annual returns, but Bagmul International took care of everything efficiently and accurately. Highly recommended!
+                </div>
+                <div class="testimonial-author">
+                    <img src="client2.jpg" alt="Finance Manager">
+                    <div class="author-info">
+                        <h4>Brenda K.</h4>
+                        <p>Finance Manager, Green Innovations</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="quote">
+                         The business proposal they developed for us was outstanding. It was well-researchedand professionally written, significantly increasing our chances of success.
+                </div>
+                <div class="testimonial-author">
+                    <img src="client3.jpg" alt="Startup Founder">
+                    <div class="author-info">
+                        <h4>Sam O.</h4>
+                        <p>Founder, Bright Startups</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <div class="section-title">
+            <h2>Transparent Pricing</h2>
+            <p>Get clear and competitive pricing for our range of business services.</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3>Basic Registration Package</h3>
+                <div class="price">Contact Us</div>
+                <ul class="pricing-features">
+                    <li>Company/NGO Registration</li>
+                    <li>Initial Document Filing</li>
+                    <li>Basic Consultation</li>
+                </ul>
+                <button class="demo-btn">ENQUIRE NOW</button>
+            </div>
+            <div class="pricing-card popular">
+                <div class="popular-tag">MOST POPULAR</div>
+                <h3>Comprehensive Compliance Package</h3>
+                <div class="price">Contact Us</div>
+                <ul class="pricing-features">
+                    <li>Company/NGO Registration</li>
+                    <li>Change of Particulars</li>
+                    <li>URSB Annual Returns (1 year)</li>
+                    <li>TIN Registration Support</li>
+                </ul>
+                <button class="demo-btn">ENQUIRE NOW</button>
+            </div>
+            <div class="pricing-card">
+                <h3>Business Development Services</h3>
+                <div class="price">Custom</div>
+                <ul class="pricing-features">
+                    <li>Business Proposal Development</li>
+                    <li>Website Development (Basic)</li>
+                    <li>Custom Consultation</li>
+                    <li>Other services available</li>
+                </ul>
+                <button class="demo-btn">REQUEST QUOTE</button>
+            </div>
+        </div>
+        <p style="text-align: center; margin-top: 2rem;">Contact us for detailed pricing on individual services and customized packages.</p>
+    </section>
+
+    <section id="contact" class="cta">
+        <h2>Ready to Grow Your Business?</h2>
+        <p>Get in touch with our team to discuss your business needs and how we can help you succeed.</p>
+        <a href="#" class="cta-btn">CONTACT US TODAY</a>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Bagmul International</h3>
+                <p>Your trusted partner for business registration, compliance, and development solutions.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#services">Company Registration</a></li>
+                    <li><a href="#services">Document Filing</a></li>
+                    <li><a href="#services">URSB Annual Returns</a></li>
+                    <li><a href="#services">TIN Registration</a></li>
+                    <li><a href="#services">Website Development</a></li>
+                    <li><a href="#services">Business Proposals</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#why-us">Why Choose Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <ul class="contact-info">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Anex Building room D12, Kampala, Uganda</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+256 754876454</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>info@bagmulinternational.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Bagmul International. All rights reserved. | <a href="#" style="color: var(--accent);">Privacy Policy</a> | <a href="#" style="color: var(--accent);">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Get the demo button
+        const demoBtn = document.querySelector('.demo-btn');
+
+        // Add a click event listener to the button
+        demoBtn.addEventListener('click', function() {
+            // Replace this with your desired functionality
+            alert('Thank you for your interest! Please contact us for a personalized quote.');
+        });
+    </script>
+</body>
+</html>
