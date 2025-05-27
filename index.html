@@ -78,6 +78,13 @@
         .logo-icon {
             color: var(--accent);
         }
+        .logo .logo-img { /* Target the image with its new class within .logo */
+            width: 70px;  /* Adjust size as needed */
+            height: 70px; /* Adjust size as needed */
+            border-radius: 50%; /* Makes it circular, remove if not desired */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+            /* margin-right: 0.5rem; /* Adds a little space if the gap on .logo isn't enough or preferred */
+        }
 
         nav ul {
             display: flex;
@@ -628,7 +635,7 @@
 <body>
     <header>
         <div class="logo">
-            <i class="fas fa-briefcase logo-icon"></i>
+            <img src="./images/HeadLogo.png" alt="Bagmul Enterprise Logo" class="logo-img"> <!-- Changed to img and class for clarity -->
             <span>Bagmul Enterprise</span>
         </div>
         <nav>
