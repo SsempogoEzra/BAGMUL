@@ -64,6 +64,13 @@
             color: var(--accent);
         }
 
+        .logo .logo-img { /* Style for the new image logo */
+            width: 40px;  /* Adjust size as needed */
+            height: 40px; /* Adjust size as needed */
+            border-radius: 50%; /* Makes it circular, remove if not desired */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+        }
+
         nav ul {
             display: flex;
             list-style: none;
@@ -431,7 +438,7 @@
 <body>
     <header>
         <div class="logo">
-            <i class="fas fa-briefcase logo-icon"></i>
+            <img src="./images/HeadLogo.png" alt="Bagmul Enterprise Logo" class="logo-img">
             <span>Bagmul Enterprise</span>
         </div>
         <nav>
@@ -439,7 +446,7 @@
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="index.html#services">SERVICES</a></li>
                 <li><a href="about.html">WHY US</a></li>
-                <li><a href="#contact" class="active">CONTACT</a></li>
+                <li><a href="#contact" class="active">CONTACT<  /a></li>
                 <li><a href="index.html#contact" class="demo-btn">GET A QUOTE</a></li>
             </ul>
         </nav>
